@@ -10,5 +10,5 @@ class Author(db.Model):
 
 class New(db.Model):
     new_id = db.Column(db.Integer, primary_key=True)
-    author_id = db.Column(db.Integer, db.ForeignKey("author.new_id"))
+    author_id = db.Column(db.Integer, db.ForeignKey("author.author_id"))
     title = db.Column(db.String)
